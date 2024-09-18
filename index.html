@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areej Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(7, 2, 2);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgba(86, 86, 145, 0.329);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        nav ul li a:hover {
+            color: rgb(115, 115, 170);
+            font-size: 1.1rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 40px 0;
+            height: 80vh;
+        }
+
+        .firstSection div {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            font-size: xx-large;
+        }
+
+        .leftSection {
+            font-weight: bold;
+        }
+
+        .leftSection div {
+            margin-top: 10px;
+        }
+
+        .leftSection div span {
+            display: block;
+        }
+
+        .rightSection {}
+
+        .rightSection img {
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .purple {
+            color: rgb(123, 86, 158);
+        }
+
+        #element {
+            color: rgb(123, 86, 158);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: auto;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 48px;
+        }
+
+        .secondSection h1 {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+        }
+
+        .experience {
+            margin-bottom: 30px;
+        }
+
+        .experience h2 {
+            font-size: 1.3rem;
+            color: #9c97f1;
+        }
+
+        .experience p {
+            font-size: 1rem;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+
+        .skillsSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .skillsSection h1 {
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .skillsSection ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .skillsSection ul li {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .projectsSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .projectsSection h1 {
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .projectsSection .project {
+            margin-bottom: 30px;
+        }
+
+        .projectsSection h2 {
+            font-size: 1.3rem;
+            color: #9c97f1;
+        }
+
+        .projectsSection p {
+            font-size: 1rem;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+
+        .contactSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .contactSection h1 {
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .contactSection p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: rgb(36, 34, 34);
+            padding: 30px 0;
+            color: white;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 122px;
+        }
+
+        .footer {
+            width: 20%;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer ul li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection">
+                <span>Hi, My Name is <span class="purple">Areej</span></span>
+                <span>and I am a passionate</span>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.jpg" alt="Portfolio Image">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondSection" id="about">
+            <h1>Work Experience</h1>
+            <div class="box"></div>
+
+            <div class="experience">
+                <h2>Web Developer at XYZ Tech Solutions</h2>
+                <p>Developed and maintained websites and web applications using HTML, CSS, JavaScript, and PHP. Implemented responsive design, ensuring compatibility across devices and browsers. Collaborated with designers and back-end developers to deliver optimized web experiences.</p>
+            </div>
+
+            <div class="experience">
+                <h2>Web Designer at Creative Minds Studio</h2>
+                <p>Designed and revamped websites with a focus on user experience and modern aesthetics. Created wireframes, prototypes, and visual designs using tools like Adobe XD and Figma. Worked closely with developers to ensure seamless integration of designs into live websites.</p>
+            </div>
+
+            <div class="experience">
+                <h2>Data Analyst at Data Insights Corp.</h2>
+                <p>Analyzed large datasets to identify trends and insights, improving decision-making processes. Created interactive dashboards and visualizations using tools like Tableau and Power BI. Conducted statistical analysis to support business strategies and data-driven solutions.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="skillsSection" id="skills">
+            <h1>Skills</h1>
+            <ul>
+                <li>Proficient in Programming Languages: Java, Python, C++</li>
+                <li>Web Development: HTML, CSS, JavaScript</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Database Management: MySQL</li>
+                <li>Strong Problem-Solving Skills</li>
+                
+                
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="projectsSection" id="projects">
+            <h1>Projects</h1>
+
+            <div class="project">
+                <h2>Project in Java</h2>
+                <p>Hospital Management System: GUI-based system developed in Java for managing hospital operations, including patient registration, appointments, billing, and staff management.</p>
+            </div>
+
+            <div class="project">
+                <h2>Database Management Project</h2>
+                <p>Using MySQL, built a hospital management system where doctors, nurses, and other staff members are managed through a well-structured database, improving operational efficiency.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="contactSection" id="contact">
+            <h1>Contact Details</h1>
+            <p>Email Address: <a href="mailto:areejmemon112@gmail.com">areejmemon112@gmail.com</a></p>
+            <p>Phone Number: +92300-3255847</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/areej-memon-51a139301/" target="_blank">Areej Memon's LinkedIn</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="flex">
+            <div class="footer">
+                <h3>Areej's Portfolio</h3>
+            </div>
+            <div class="footer">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
